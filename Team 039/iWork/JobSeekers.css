@@ -1,0 +1,752 @@
+body {
+    font-family: sans-serif;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    text-transform: uppercase;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    background-color: ghostwhite;
+}
+
+li {
+    flex: 1 1;
+    position: relative;
+
+{
+    display: block;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: transparent;
+    display: block;
+    transition: .3s ease;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+
+&:nth-child(1).current ~ li:last-child::after {
+    left: -500%;
+    background-color: #360033;
+}
+
+&:nth-child(2).current ~ li:last-child::after {
+    left: -400%;
+    background-color: #301441;
+}
+
+&:nth-child(3).current ~ li:last-child::after {
+    left: -300%;
+    background-color: #263357;
+}
+
+&:nth-child(4).current ~ li:last-child::after {
+    left: -200%;
+    background-color: #1b546f;
+}
+
+&:nth-child(5).current ~ li:last-child::after {
+    left: -100%;
+    background-color: #117385;
+}
+
+&:nth-child(6).current:last-child::after {
+    left: 0;
+    background-color: #0b8793;
+}
+
+&:nth-child(1):hover ~ li:last-child::after {
+    left: -500%;
+    background-color: #360033;
+}
+
+&:nth-child(2):hover ~ li:last-child::after {
+    left: -400%;
+    background-color: #301441;
+}
+
+&:nth-child(3):hover ~ li:last-child::after {
+    left: -300%;
+    background-color: #263357;
+}
+
+&:nth-child(4):hover ~ li:last-child::after {
+    left: -200%;
+    background-color: #1b546f;
+}
+
+&:nth-child(5):hover ~ li:last-child::after {
+    left: -100%;
+    background-color: #117385;
+}
+
+&:nth-child(6):last-child:last-child:hover::after {
+    left: 0;
+    background-color: #0b8793 !important;
+}
+
+&:nth-child(6):hover::after {
+    left: 0%;
+    background-color: #0b8793;
+}
+
+&:nth-child(1) a {
+    color: #360033;
+}
+
+&:nth-child(2) a {
+    color: #301441;
+}
+
+&:nth-child(3) a {
+    color: #263357;
+}
+
+&:nth-child(4) a {
+    color: #1b546f;
+}
+
+&:nth-child(5) a {
+    color: #117385;
+}
+
+&:nth-child(6) a {
+    color: #0b8793;
+}
+
+}
+
+a {
+    padding: 1rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #666;
+}
+
+@media (max-width: 320px) {
+    ul {
+        flex-direction: column
+    }
+
+    li {
+        &:last-child::after
+
+{
+    margin-top: -1.5px;
+}
+
+&:nth-child(1).current ~ li:last-child::after {
+    left: 0;
+    top: -400%;
+}
+
+&:nth-child(2).current ~ li:last-child::after {
+    left: 0;
+    top: -300%;
+}
+
+&:nth-child(3).current ~ li:last-child::after {
+    left: 0;
+    top: -200%;
+}
+
+&:nth-child(4).current ~ li:last-child::after {
+    left: 0;
+    top: -100%;
+}
+
+&:nth-child(5).current ~ li:last-child::after {
+    left: 0;
+    top: 0;
+}
+
+&:nth-child(6).current:last-child::after {
+    left: 0;
+    top: 100%;
+}
+
+&:last-child::after {
+    left: 0%;
+    top: 0%;
+}
+
+&:nth-child(1):hover ~ li:last-child::after {
+    left: 0;
+    top: -400%;
+}
+
+&:nth-child(2):hover ~ li:last-child::after {
+    left: 0;
+    top: -300%;
+}
+
+&:nth-child(3):hover ~ li:last-child::after {
+    left: 0;
+    top: -200%;
+}
+
+&:nth-child(4):hover ~ li:last-child::after {
+    left: 0;
+    top: -100%;
+}
+
+&:nth-child(5):hover ~ li:last-child::after {
+    left: 0;
+    top: 0;
+}
+
+&:nth-child(6):last-child:last-child:hover::after {
+    left: 0;
+    top: 100%;
+}
+
+}}
+
+
+h1 {
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.tbl-header {
+    background-color: rgba(255,255,255,0.3);
+}
+
+.tbl-content {
+    height: 300px;
+    overflow-x: auto;
+    margin-top: 0px;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+th {
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 15px;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 12px;
+    color: #fff;
+    border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+
+/* demo styles */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+body {
+    background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+    background: linear-gradient(to right, #25c481, #25b7c4);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+section {
+    margin: 50px;
+}
+
+
+/* follow me template */
+.made-with-love {
+    margin-top: 40px;
+    padding: 10px;
+    clear: left;
+    text-align: center;
+    font-size: 10px;
+    font-family: arial;
+    color: #fff;
+}
+
+    .made-with-love i {
+        font-style: normal;
+        color: #F50057;
+        font-size: 14px;
+        position: relative;
+        top: 2px;
+    }
+
+    .made-with-love a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+        .made-with-love a:hover {
+            text-decoration: underline;
+        }
+
+
+/* for custom scrollbar for webkit browser*/
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+///SETTINGS
+//The padding is no longer used on the actual element but rather as a margin on the container
+$padding: .75rem;
+$label-padding: $padding!default;
+$font-size: .8rem;
+$text-color: black;
+$select-color: #09f;
+//Bootstrap validation colors, sub in your own
+$success-color: #00e25e;
+$danger-color: #e91e63;
+$warning-color: #fbc02d;
+//Used for placeholder and the placeholder line
+$placeholder-color: #999;
+
+//$label-padding: 0rem;
+///DEMO Styles
+body{
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue", Arial, sans-serif;
+}
+.demo-container {
+  width: 25rem;
+}
+
+///Importable Styles
+.tb-container {
+  position: relative;
+  margin: 0 $padding * 2;
+  margin-top: $padding;
+}
+
+.aumd-tb-label {
+  position: absolute;
+  color: $placeholder-color;
+  top: 50%;
+  transform: translate(#{$label-padding}, -50%);
+  pointer-events: none;
+  transition: all .14s ease-in-out;
+}
+
+input[type="text"].aumd-tb,
+input[type="password"].aumd-tb {
+  color: $text-color;
+  border: none;
+  border-bottom: 1px solid $placeholder-color;
+  padding: $padding $label-padding;
+  font-size: $font-size;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  &:focus {
+    outline: none;
+  }
+  &.c-fix,
+  &:focus,
+  &:not(:placeholder-shown),
+  {
+    border-color: transparent;
+    ~ label {
+      color: $select-color;
+      font-size: $font-size * .9;
+      //Come up with a calculation for this
+      top: calc(10% - .5rem);
+      transform: translate(#{$label-padding}, 0%);
+    }
+    ~span:after {
+      width: 100%;
+      left: 0;
+    }
+  }
+  &::-webkit-input-placeholder {
+    color: transparent;
+  }
+  &::-moz-placeholder {
+    color: transparent;
+  }
+  &:-ms-input-placeholder {
+    color: transparent;
+  }
+  ~ .validation {
+    display: block;
+    color: $placeholder-color;
+    font-size: $font-size * .9;
+    visibility: hidden;
+    max-height: 0;
+    height: 0;
+    transition: all .14s ease-in-out;
+    margin-left: $padding;
+    &:after {
+      transition: all .14s ease-in-out;
+      left: 50%;
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      visibility: visible;
+      background-color: $select-color;
+    }
+  }
+  .has-success &,
+  &.form-control-success {
+    border-color: transparent;
+    ~ label {
+      color: $success-color;
+    }
+    ~.validation {
+      color: $success-color;
+      &:not(:empty) {
+        height: $font-size;
+        line-height: $font-size;
+        max-height: $font-size;
+        display: initial;
+        visibility: visible;
+      }
+      &:after {
+        background-color: $success-color;
+        width:100%;
+        left: 0%;
+      }
+    }
+  }
+  .has-warning &,
+  &.form-control-warning {
+    border-color: transparent;
+    ~ label {
+      color: $warning-color;
+    }
+    ~.validation {
+      color: $warning-color;
+      &:not(:empty) {
+        height: $font-size;
+        line-height: $font-size;
+        max-height: $font-size;
+        display: initial;
+        visibility: visible;
+      }
+      &:after {
+        background-color: $warning-color;
+        width:100%;
+        left: 0;
+      }
+    }
+  }
+  .has-danger &,
+  &.form-control-danger {
+    border-color: transparent;
+    ~ label {
+      color: $danger-color;
+    }
+    ~.validation {
+      color: $danger-color;
+      &:not(:empty) {
+        height: $font-size;
+        line-height: $font-size;
+        max-height: $font-size;
+        display: initial;
+        visibility: visible;
+      }
+      &:after {
+        background-color: $danger-color;
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
+}
+
+.search-box, .close-icon, .search-wrapper {
+    position: relative;
+    padding: 10px;
+}
+
+.search-wrapper {
+    width: 500px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.search-box {
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: 0;
+    border-radius: 15px;
+}
+
+    .search-box:focus {
+        box-shadow: 0 0 15px 5px #b0e0ee;
+        border: 2px solid #bebede;
+    }
+
+.close-icon {
+    border: 1px solid transparent;
+    background-color: transparent;
+    display: inline-block;
+    vertical-align: middle;
+    outline: 0;
+    cursor: pointer;
+}
+
+    .close-icon:after {
+        content: "X";
+        display: block;
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        background-color: #FA9595;
+        z-index: 1;
+        right: 35px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        padding: 2px;
+        border-radius: 50%;
+        text-align: center;
+        color: white;
+        font-weight: normal;
+        font-size: 12px;
+        box-shadow: 0 0 2px #E50F0F;
+        cursor: pointer;
+    }
+
+.search-box:not(:valid) ~ .close-icon {
+    display: none;
+}
+
+$red:#F44336; @mixin transition($in) {
+    transition: $in;
+    -webkit-transition: $in;
+    -moz-transition: $in;
+    -o-transition: $in;
+    -ms-transition: $in;
+}
+
+@mixin transform($in) {
+    transform: $in;
+    -webkit-transform: $in;
+    -moz-transform: $in;
+    -o-transform: $in;
+    -ms-transform: $in;
+}
+
+@mixin animation($in) {
+    animation: $in;
+    -webkit-animation: $in;
+    -moz-animation: $in;
+    -o-animation: $in;
+    -ms-animation: $in;
+}
+
+header {
+    text-align: center;
+    h1
+
+{
+    text-transform: uppercase;
+}
+
+}
+
+.myButt {
+    outline: none;
+    color: white;
+    border: none;
+    padding: 10px;
+    display: block;
+    margin: 10px auto;
+    cursor: pointer;
+    font-size: 11px;
+    background-color: transparent;
+    position: relative;
+    border: 2px solid #fff;
+    font-weight: bold;
+
+    @include transition(all 0.5s ease);
+}
+
+
+// ################ ONE .one {
+    border-color: #fff;
+    overflow: hidden;
+    color: #fff;
+    .insider
+
+{
+    background-color: #fff;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    left: -135px;
+
+    @include transform(rotateZ(45deg));
+}
+
+&:hover {
+    background-color: $red;
+    border-color: #fff;
+    color: #fff;
+    .insider
+
+{
+    @include transition(all 0.3s ease);
+    left: 135px;
+}
+
+}
+}
+
+// ################ TWO .two {
+    color: #fff;
+    &:hover
+
+{
+    border-color: $red;
+    color: $red;
+
+    @include animation(shakeThatBooty 0.3s linear 1);
+}
+
+}
+
+@keyframes shakeThatBooty {
+    33% {
+        @include transform(rotateZ(10deg));
+    }
+
+    67% {
+        @include transform(rotateZ(-10deg));
+    }
+
+    100% {
+        @include transform(rotateZ(10deg));
+    }
+}
+
+
+// ################ THREE .three {
+    color: #fff;
+    border-color: transparent;
+    &:before
+
+{
+    width: 0;
+    height: 3px;
+    content: " ";
+    background-color: $red;
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    @include transition(all 0.3s ease);
+}
+
+&:after {
+    @extend .three:before;
+    top: 100%;
+}
+
+&:hover {
+    letter-spacing: 8px;
+    color: $red;
+    &:before
+
+{
+    width: 100%;
+    left: 0;
+}
+
+&:after {
+    width: 100%;
+    left: 0;
+}
+
+}
+}
+
+// ################ FOUR .four {
+    overflow: hidden;
+    span
+
+{
+    color: #fff;
+    display: inline-block;
+
+    @include transition(all 0.3s ease);
+}
+
+.icon {
+    position: absolute;
+    left: -60px;
+    top: 0;
+    color: #fff;
+    padding: 20px;
+    background-color: $red;
+    @include transition(all 0.3s ease);
+}
+
+&:hover {
+    .icon
+
+{
+    left: 0px;
+}
+
+span {
+    color: $red;
+    margin-left: 50px;
+}
+
+}
+}
+
+// ################ FIVE .five {
+    overflow: hidden;
+    color: #fff;
+    .layer
+
+{
+    color: #fff;
+    position: absolute;
+    top: -70px;
+    width: 100%;
+    left: 0;
+    padding: 20px 0;
+    background-color: $red;
+    @include transition(all 0.3s ease);
+}
+
+&:hover {
+    .layer
+
+{
+    top: 0;
+}
+
+}
+}
